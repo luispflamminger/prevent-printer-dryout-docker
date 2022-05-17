@@ -1,0 +1,2 @@
+0 0 * * MON,FRI lp -d $(lpstat -e | sed 1q) /testpage.pdf >> /var/log/cron.log 2>&1
+# Every Monday and Friday at 00:00, print testpage.pdf on the first available network printer
